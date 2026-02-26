@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/icons_fav/Astronaut_Programmer.ico" type="image/x-icon" />
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <!-- responsive layout -->
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- HEADER NAV -->
+    <header class="header">
+        <div class="logo">
+            <span id="signature" class="signature">M.F.</span>
+        </div>
+
+        <button id="headerMenuToggle" class="header-menu-toggle">
+            <i id="mobileMenuIcon" class="bx bx-menu"></i>
+        </button>
+
+        <nav id="headerNav" class="header-nav">
+            <!-- JS injects scroll links here -->
+        </nav>
+    </header>
+
+
+    <!-- SIDEBAR -->
+    <aside id="sidebar" class="sidebar">
+        <h2 class="sidebar-header">Click To <span>View</span></h2>
+
+        <div class="divider"></div>
+
+        <!-- Section Toggles -->
+        <label class="">
+            <input type="checkbox" data-section="home">
+            <i class="bx bx-home-circle"></i>
+            Home
+        </label>
+
+        <label class="">
+            <input type="checkbox" data-section="about">
+            <i class="bx bx-info-square"></i>
+            About
+        </label>
+
+        <label class="">
+            <input type="checkbox" data-section="services">
+            <i class="bx bx-cart-alt"></i>
+            Services
+        </label>
+
+        <label class="">
+            <input type="checkbox" data-section="projects">
+            <i class="bx bx-clipboard"></i>
+            Projects
+        </label>
+
+        <label class="">
+            <input type="checkbox" data-section="contact">
+            <i class="bx bx-user"></i>
+            Contact
+        </label>
+
+        <div class="divider"></div>
+
+
+        <!-- Action Toggle -->
+        <div id="sidebarActions" class="sidebar-actions">
+            <!-- Theme Toggle -->
+            <button id="themeToggle">
+                <i id="themeToggleIcon" class="bx bx-moon"></i>
+            </button>
+            <button id="selectAll">Select All</button>
+            <button id="clearAll">Clear All</button>
+        </div>
+    </aside>
+
+
+    <!-- FLOATING SIDEBAR TOGGLE -->
+    <button id="sidebarToggle" class=" sidebar-toggle">
+        <i id="sidebarToggleIcon" class="bx bx-chevron-left-circle"></i>
+    </button>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <!-- Home Section Design -->
+        <section id="home" class="content-section">
+            <div id="contentContainer" class="home">
+                <div class="home-content">
+                    <h3>
+                        <span>console.log("</span>
+                        Hello World!
+                        <span>");</span>
+                    </h3>
+
+                    <h1>I'm Milano <span>Faarland</span></h1>
+
+                    <p>
+                        Dynamic and versatile, with a <b>passion</b> for
+                        <b>blending creativity</b> with cutting-edge technology. With a
+                        <b>diverse</b> skill set that spans <b>web development,</b>
+                        <b>game development,</b> and <b>3D modeling</b> using Blender, I've
+                        established a reputation for pushing the boundaries of
+                        <b>digital innovation.</b>
+                    </p>
+
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/MilanoFaarland" target="_blank">
+                            <i id="social-icon" class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/milanofaarland?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                            <i id="social-icon" class="bx bxl-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/milano-faarland-a98431127" target="_blank">
+                            <i id="social-icon" class="bx bxl-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MilanoFaarland" target="_blank">
+                            <i id="social-icon" class="bx bxl-github"></i>
+                        </a>
+                        <a href="#">
+                            <i id="social-icon" class="bx bx-world"></i>
+                        </a>
+                    </div>
+
+                    <!-- <a href="./assets/documents/MilanoFaarlandCV.pdf" download="MilanoFaarlandCV" class="btn" id="cv-download">Download C.V.</a> -->
+                    <a href="#" id="#" class="btn">Download C.V.</a>
+                </div>
+
+                <div class="home-img">
+                    <img src="./assets/images/indexImages/Main.png" alt="home image of Milano Faarland" />
+                </div>
+            </div>
+        </section>
+
+        <!-- About Design Section -->
+        <section id="about" class="content-section">
+            <div id="contentContainer" class="about ">
+                <div class="about-img">
+                    <img src="./assets/images/indexImages/About.png" alt="about image of milano faarland" />
+                </div>
+
+                <div class="about-content">
+                    <h2 class="heading">About <span>Me</span></h2>
+
+                    <h3><span class="multiple-text"></span></h3>
+
+                    <p>
+                        I'm a multifaceted tech genius with expertise in web development,
+                        game development, and 3D modeling using Blender. With a knack for
+                        crafting responsive and engaging websites, I excel in creating
+                        seamless digital experiences. In the realm of game development, I
+                        leverages Unity 3D game engine to build immersive and innovative
+                        games. As a skilled Blender modeler, I bring creativity to life with
+                        stunning 3D designs. Passionate about technology and creativity, I'm
+                        always exploring new ways to push the boundaries of digital
+                        innovation.
+                    </p>
+
+                    <!-- <a href="#" class="btn" target="_self">Read More</a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section Design -->
+        <section id="services" class="content-section">
+            <div id="contentContainer" class="services">
+                <h2 class="heading">My <span>Services</span></h2>
+
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class="bx bx-code-alt"></i>
+
+                        <h3>Web Designer</h3>
+
+                        <p>
+                            User-friendly websites that are tailored to meet your business
+                            goals. Whether you need a simple landing page or a complex
+                            e-commerce platform, our team of experienced developers uses the
+                            latest technologies and best practices to deliver high-quality
+                            solutions.
+                        </p>
+
+                        <!-- <a href="#" class="btn" target="_self">Read More</a> -->
+                    </div>
+
+                    <div class="services-box">
+                        <i class="bx bxl-unity"></i>
+
+                        <h3>Game Designer</h3>
+
+                        <p>
+                            A comprehensive approach to bringing your gaming ideas to reality.
+                            We specialize in creating immersive, interactive experiences
+                            across a variety of platforms, including mobile, console, and PC.
+                            Let us help you craft a captivating game that stands out in the
+                            competitive gaming industry.
+                        </p>
+
+                        <!-- <a href="#" class="btn" target="_self">Read More</a> -->
+                    </div>
+
+                    <div class="services-box">
+                        <i class="bx bxl-blender"></i>
+
+                        <h3>Blender Modeler</h3>
+
+                        <p>
+                            Our Blender 3D modeling services provide high-quality, detailed,
+                            and realistic models to bring your creative visions to life. Using
+                            the powerful capabilities of Blender. Let us transform your ideas
+                            into compelling 3D models that captivate and inspire your
+                            audience.
+                        </p>
+
+                        <!-- <a href="#" class="btn" target="_self">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section Design -->
+        <section id="projects" class="content-section">
+            <div id="contentContainer" class="projects">
+                <h2 class="heading">Latest <span>Projects</span></h2>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/GalacticEscape.jpeg"
+                            alt="GalacticEscape cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>Galactic Escape</h4>
+
+                            <p>
+                                Puzzle Game: Explore our Galactic Escape puzzle game, designed
+                                for mobile platforms. This project demonstrates our skill in
+                                creating intuitive and addictive gameplay.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/ShadowsOfWar.jpeg"
+                            alt="ShadowsOfWar cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>Shadows of War</h4>
+
+                            <p>
+                                Fantasy Quest RPG: Dive into our Fantasy Quest RPG, a
+                                captivating role-playing game that showcases our expertise in
+                                character design, world-building, and immersive storytelling.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/OutOfThisWorld.jpeg"
+                            alt="OutOfThisWorld cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>Out Of This World</h4>
+
+                            <p>
+                                E-commerce Platform for Artisan Crafts: Discover our bespoke
+                                e-commerce solution for artisan crafts, featuring a sleek,
+                                user-friendly interface and robust back-end functionality.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/Zerubbabel.jpg"
+                            alt="Zerubbabel cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>Zerubbabel</h4>
+
+                            <p>
+                                Corporate Website Redesign for Tech Firm: Explore our complete
+                                website redesign for a leading tech firm, focusing on modern
+                                aesthetics, improved user experience, and optimized performance.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/SixLeggedSpider.png"
+                            alt="SixLeggedSpider cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>Advanced Spider Design</h4>
+
+                            <p>
+                                Utilizing Blender's capabilities, we created realistic 3D models
+                                and animations that bring complex architectural plans to life,
+                                aiding in stakeholder presentations and planning approvals.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+
+                    <div class="portfolio-box">
+                        <img class="portfolio-img" src="./assets/images/projects/ThisIsEldos.jpg"
+                            alt="ThisIsEldos cover image" />
+
+                        <div class="portfolio-layer">
+                            <h4>This is Eldos</h4>
+
+                            <p>
+                                This project emphasizes our proficiency in creating scalable and
+                                secure online shopping experiences that enhance customer
+                                engagement and streamline business operations.
+                            </p>
+
+                            <!-- <a href="#"><i class="bx bx-link-external"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section Design -->
+        <section id="contact" class="content-section">
+
+            <div id="contentContainer" class="contact">
+
+                <h2 class="heading">Leave <span>Me</span> a Message</h2>
+
+                <div class="right">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter Your First and Last Name" required />
+                            <input type="email" placeholder="Enter Your Email Address" required />
+                        </div>
+
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your message"
+                            required>
+                        </textarea>
+
+                        <input class="btn" type="submit" value="Send Message" draggable="true" />
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Section Design -->
+        <footer id="footer" class="footer">
+            <div class="footer-content">
+
+                <div class="footer-text">
+                    <p>
+                        &copy;
+                        <span class="currentYear">2025</span>
+                        |
+                        <span id="signature">Scyphers Den</span>
+                        |
+                        All Rights Reserved.
+                    </p>
+                </div>
+
+
+                <div class="footer-social-media">
+                    <a href="https://www.facebook.com/MilanoFaarland" target="_blank">
+                        <i id="social-icon" class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="https://instagram.com/milanofaarland?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                        <i id="social-icon" class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/milano-faarland-a98431127" target="_blank">
+                        <i id="social-icon" class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MilanoFaarland" target="_blank">
+                        <i id="social-icon" class="bx bxl-github"></i>
+                    </a>
+                    <a href="#">
+                        <i id="social-icon" class="bx bx-world"></i>
+                    </a>
+                </div>
+
+                <div class="footer-iconTop">
+                    <a href="#home">
+                        <i id="iconTop" class="bx bx-chevrons-up"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main interactions -->
+    <script src="./assets/scripts/script.js"></script>
+
+    <!-- Custom JavaScript -->
+    <!-- <script src="./assets/scripts/interact.js" defer></script> -->
+
+    <!-- Typed JavaScript -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Typed embbeded -->
+    <script src="./assets/scripts/typed.js"></script>
+
+</body>
+
+</html>
