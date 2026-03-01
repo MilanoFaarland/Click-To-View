@@ -527,7 +527,7 @@ main {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  background: linear-gradient(rgba(78, 8, 184, 0.1), var(--accent-color-alt));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,6 +536,7 @@ main {
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
+  color: white;
 }
 
 .portfolio-box:hover .portfolio-layer {
